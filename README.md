@@ -87,33 +87,49 @@ The compressed binary file uses **bit manipulation techniques** to store superma
 
 ---
 
+---
+
 ## ⚙ Compilation
+
 Compile the program using **gcc**:
 
 ```bash
 gcc *.c -o supermarket
+```
 
 ---
 
 ## ▶ Running the Program
 
 Run the program with:
-./supermarket <isCompressed> <fileName>
 
-## Parameters
-Parameter	Description
-0	Use normal binary file
-1	Use compressed binary file
+```bash
+./supermarket <isCompressed> <fileName>
+```
+
+### Example
+
+```bash
+./supermarket 1 SuperMarket_Compress.bin
+```
+
+### Parameters
+
+| Parameter | Description |
+|---|---|
+| `0` | Use normal binary file |
+| `1` | Use compressed binary file |
+
 ---
 
-🛠 Technologies Used
-Technology	Purpose
-C Programming Language	Main programming language
-Linked Lists	Used for shopping cart implementation
-Dynamic Memory Allocation	Managing memory with malloc/calloc/realloc
-Function Pointers	Implementing polymorphism using vTable
-Binary & Text File Handling	Saving and loading supermarket data
-Bit Manipulation	Data compression in binary files
-qsort / bsearch	Sorting and searching products
+## 🛠 Technologies Used
+
+- **C Programming Language** – Main programming language
+- **Linked Lists** – Used for shopping cart implementation
+- **Dynamic Memory Allocation** – Managing memory with `malloc`, `calloc`, `realloc`
+- **Function Pointers** – Implementing polymorphism using `vTable`
+- **Binary & Text File Handling** – Saving and loading supermarket data
+- **Bit Manipulation** – Data compression in binary files
+- **`qsort` / `bsearch`** – Sorting and searching products
 
 ---
